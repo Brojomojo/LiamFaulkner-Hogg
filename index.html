@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Liam Faulkner‑Hogg – Mechanical & Mechatronics Engineer</title>
+    <meta name="description"
+        content="Portfolio of Liam Faulkner‑Hogg – Mechanical & Mechatronics Engineer focused on robotics, photonics, and hands‑on prototyping." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header with brand, desktop nav, and a hamburger button for mobile -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="brand">
+                    <div class="avatar" aria-hidden="true">LF</div>
+                    <div>
+                        <strong>Liam Faulkner‑Hogg</strong><br>
+                        <span class="muted">Mechanical & Mechatronics Engineer</span>
+                    </div>
+                </div>
+
+
+                <!-- Hamburger button appears on small screens; toggles the navlinks below -->
+                <button class="hamburger" aria-label="Toggle navigation" aria-controls="primary-nav"
+                    aria-expanded="false">
+                    <span class="hamburger-box" aria-hidden="true">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+
+
+                <!-- Primary navigation; collapsible on mobile -->
+                <div id="primary-nav" class="navlinks" role="navigation" aria-label="Primary">
+                    <a href="#about" class="btn btn-ghost">About</a>
+                    <a href="#skills" class="btn btn-ghost">Skills</a>
+                    <a href="#projects" class="btn btn-ghost">Projects</a>
+                    <a href="#experience" class="btn btn-ghost">Experience</a>
+                    <a href="#education" class="btn btn-ghost">Education</a>
+                    <a href="#contact" class="btn" data-open-modal="#contact-modal">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <main class="container">
+        <!-- HERO / ABOUT -->
+        <section id="about" class="hero">
+            <div>
+                <p class="kicker">About</p>
+                <h1>Building real‑world systems in robotics, photonics & mechatronics.</h1>
+                <p class="lead">I’m a UTS engineering student focused on <strong>LDV‑INS navigation</strong>,
+                    <strong>ROS 2 robotics</strong>, and <strong>hands‑on prototyping</strong>. I enjoy turning ideas
+                    into robust hardware: fiber‑optic LDVs, Raspberry Pi sensor stacks, and cost‑effective optical
+                    heads.</p>
+                <div class="badge">
+                    <span>Robotics/ROS 2</span>
+                    <span>Optics & LDV</span>
+                    <span>Embedded (SPI/I²C)</span>
+                    <span>Fusion 360</span>
+                    <span>MATLAB • Python • C++</span>
+                </div>
+                <div class="links">
+                    <a class="btn" data-open-modal="#contact-modal">Get in touch</a>
+                    <a class="btn btn-ghost" href="assets/Liam_Faulkner-Hogg_CV.pdf">Download CV</a>
+                    <a class="btn btn-ghost" href="https://github.com/" target="_blank"
+                        rel="noreferrer noopener">GitHub</a>
+                    <a class="btn btn-ghost" href="https://www.linkedin.com/" target="_blank"
+                        rel="noreferrer noopener">LinkedIn</a>
+                </div>
+            </div>
+            <div class="hero-card">
+                <div class="img-placeholder" role="img" aria-label="Placeholder for headshot">Add a headshot here
+                    (replace with an <img>)</div>
+                <p class="muted" style="margin-top:10px">Tip: keep imagery simple and professional. A lab shot or clean
+                    headshot works well.</p>
+            </div>
+        </section>
+
+
+        <!-- SKILLS with tabbed sub-sections -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <p class="sub">A snapshot of tools and domains I work with.</p>
+            <div class="tabs" role="tablist" aria-label="Skills categories">
+                <button class="tab is-active" role="tab" aria-selected="true" aria-controls="panel-mech"
+                    data-tab-target="#panel-mech">Mechanical / Design</button>
+                <button class="tab" role="tab" aria-selected="false" aria-controls="panel-rob"
+                    data-tab-target="#panel-rob">Robotics / Software</button>
+                <button class="tab" role="tab" aria-selected="false" aria-controls="panel-opt"
+                    data-tab-target="#panel-opt">Optics / Embedded</button>
+            </div>
+            <div id="panel-mech" class="tab-panel" role="tabpanel">
+                <ul class="clean">
+                    <li>Fusion 360 • DFM/DFA • GD&T</li>
+                    <li>Rapid prototyping • 3D printing</li>
+                    <li>Experiment design • Time studies</li>
+                </ul>
+            </div>
+            <div id="panel-rob" class="tab-panel" role="tabpanel" hidden>
+                <ul class="clean">
+                    <li>ROS 2 (Jazzy) • C++ • Python</li>
+                    <li>Sensor fusion • EKF • Nav2</li>
+                    <li>Linux • Git • Data logging</li>
+                </ul>
+            </div>
+            <div id="panel-opt" class="tab-panel" role="tabpanel" hidden>
+                <ul class="clean">
+                    <li>LDV (heterodyne) • Photodetectors</li>
+                    <li>Free‑space & fiber optics</li>
+                    <li>Raspberry Pi • SPI • I²C</li>
+                </ul>
+            </div>
+        </section>
+
+
+        <!-- PROJECTS -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <p class="sub">Selected work with brief context, methods, and impact.</p>
+            <div class="grid">
+                <article class="card">
+                    <h3>Dual‑Wavelength LDV‑INS for GNSS‑Denied Navigation</h3>
+                    <div class="meta">Optics • Embedded • ROS 2</div>
+                    <div class="img-placeholder">Project image / schematic</div>
+                    <p>Built a dual‑wavelength heterodyne LDV integrated with IMU dead‑reckoning to maintain velocity
+                        estimates during GNSS dropouts; explored speckle‑noise reduction and real‑time velocity tracking
+                        on vehicle tests.</p>
+                    <div class="tagrow">
+                        <span class="tag">1550/1556 nm</span>
+                        <span class="tag">WDM/PBC</span>
+                        <span class="tag">Balanced PD</span>
+                        <span class="tag">EKF</span>
+                    </div>
+                    <p><a href="#">Poster/PDF</a> · <a href="#">Repo</a> · <a href="#">Demo clip</a></p>
+                </article>
+                <article class="card">
+                    <h3>ROS 2 IMU Node (ICM‑42688‑P)</h3>
+                    <div class="meta">Embedded • SPI • 200 Hz</div>
+                    <div class="img-placeholder">Screenshot / graph</div>
+                    <p>High‑rate SPI driver & ROS 2 node with timestamping, calibration, and bagging for reliable IMU
+                        pipelines used in sensor fusion testing.</p>
+                    <div class="tagrow">
+                        <span class="tag">Raspberry Pi</span>
+                        <span class="tag">robot_localization</span>
+                        <span class="tag">rosbag2</span>
+                    </div>
+                    <p><a href="#">Repo</a> · <a href="#">Write‑up</a></p>
+                </article>
+                <article class="card">
+                    <h3>Free‑Space Optical Head Prototype</h3>
+                    <div class="meta">Optomechanics • Cost‑down</div>
+                    <div class="img-placeholder">Photo / render</div>
+                    <p>Designed a low‑cost free‑space optical head for LDV experiments (lenses, waveplates, circulator
+                        equivalents) to reduce cost versus fiber‑only builds while maintaining alignment tolerance and
+                        SNR.</p>
+                    <div class="tagrow">
+                        <span class="tag">Optomech</span>
+                        <span class="tag">Thorlabs</span>
+                        <span class="tag">Alignment</span>
+                    </div>
+                    <p><a href="#">Album</a> · <a href="#">BOM</a></p>
+                </article>
+            </div>
+        </section>
+
+
+        <!-- EXPERIENCE -->
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Undergraduate Researcher — UTS</h3>
+                    <div class="meta">Dates • Sydney</div>
+                    <ul class="clean">
+                        <li>Built and tested LDV‑INS prototype for ground vehicle navigation in GNSS‑denied settings.
+                        </li>
+                        <li>Authored ROS 2 nodes for IMU/LDV integration and data logging; field testing & drift
+                            analysis.</li>
+                        <li>Coordinated equipment access across labs; detailed BOMs & experiment plans.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Freelance / Personal Engineering Projects</h3>
+                    <div class="meta">Ongoing</div>
+                    <ul class="clean">
+                        <li>Designed electronics & mechanical assemblies; delivered prototypes and documentation.</li>
+                        <li>Managed suppliers, cost tracking, and validation testing.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- EDUCATION & ACHIEVEMENTS -->
+        <section id="education">
+            <h2>Education</h2>
+            <div class="card">
+                <div class="row"><strong>BEng (Mechanical & Mechatronics), UTS</strong><span class="muted">Expected
+                        YYYY</span></div>
+                <ul class="clean" style="margin-top:8px">
+                    <li>Coursework: Robotics Studio, Controls, Mechatronics, Applied Mechanics & Design.</li>
+                    <li>Capstone: LDV‑INS for GNSS‑denied navigation.</li>
+                </ul>
+            </div>
+            <h2 style="margin-top:28px">Achievements & Extracurriculars</h2>
+            <div class="card">
+                <ul class="clean">
+                    <li>Hackathons / comps (add details).</li>
+                    <li>Leadership & event organization (sports, travel logistics).</li>
+                    <li>Entrepreneurship: Etsy/Shopify stores; product research & validation.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- CONTACT MODAL (hidden by default; opened via buttons with data-open-modal) -->
+    <div id="contact-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="contact-title" hidden>
+        <div class="modal-backdrop" data-close-modal></div>
+        <div class="modal-card" role="document">
+            <button class="modal-close" aria-label="Close contact form" data-close-modal>&times;</button>
+            <h2 id="contact-title">Contact Liam</h2>
+            <p class="muted">Send a quick message. All fields are required.</p>
+
+
+            <!-- novalidate: we perform our own validation with JS for custom messages -->
+            <form id="contact-form" novalidate>
+                <label>
+                    Name
+                    <input type="text" name="name" autocomplete="name" required>
+                    <span class="error" aria-live="polite"></span>
+                </label>
+                <label>
+                    Email
+                    <input type="email" name="email" autocomplete="email" required>
+                    <span class="error" aria-live="polite"></span>
+                </label>
+                <label>
+                    Message
+                    <textarea name="message" rows="5" required></textarea>
+                    <span class="error" aria-live="polite"></span>
+                </label>
+                <div class="row">
+                    <button type="submit" class="btn">Send</button>
+                    <button type="button" class="btn btn-ghost" data-close-modal>Cancel</button>
+                </div>
+                <p class="form-result" role="status" aria-live="polite" hidden></p>
+            </form>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <span>© <span id="y"></span> Liam Faulkner‑Hogg</span>
+                <span class="muted">Built with HTML/CSS/JS • Deployed on GitHub Pages</span>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
