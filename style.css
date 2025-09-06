@@ -551,3 +551,31 @@ textarea {
     position: static;
     /* reset positioning */
 }
+
+.experience-row {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    margin-bottom: 32px;
+}
+
+.experience-img {
+    width: 160px;
+    height: auto;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .experience-row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .experience-img {
+        width: 100%;
+        max-width: 320px;
+    }
+}
