@@ -38,12 +38,11 @@
 
                 <!-- Primary navigation; collapsible on mobile -->
                 <div id="primary-nav" class="navlinks" role="navigation" aria-label="Primary">
-                    <a href="#about" class="btn btn-ghost">About</a>
-                    <a href="#skills" class="btn btn-ghost">Skills</a>
-                    <a href="#projects" class="btn btn-ghost">Projects</a>
-                    <a href="#experience" class="btn btn-ghost">Experience</a>
-                    <a href="#education" class="btn btn-ghost">Education</a>
-                    <a href="#contact" class="btn" data-open-modal="#contact-modal">Contact</a>
+                    <a href="./index.html" class="btn btn-ghost">About</a>
+                    <a href="./skills.html" class="btn btn-ghost">Skills</a>
+                    <a href="./projects.html" class="btn btn-ghost">Projects</a>
+                    <!-- <a href="./experience.html" class="btn btn-ghost">Experience</a> -->
+                    <!-- <a href="./education.html" class="btn btn-ghost">Education</a> -->
                 </div>
             </nav>
         </div>
@@ -54,226 +53,68 @@
         <!-- HERO / ABOUT -->
         <section id="about" class="hero">
             <div>
+                <img src="./assets/headshot.jpg" alt="Headshot of Liam Faulkner-Hogg" width="250" />
+                <img src="./assets/bartending.jpg" alt="Liam Faulkner-Hogg Bartending at Palmer & Co" width="250" />
+                <img src="./assets/advanced-nav.jpg" alt="Liam Faulkner-Hogg with Advanced Navigation" width="250" />
+            </div>
+            <!-- <div>
+                <img src="./assets/bartending.jpg" alt="Liam Faulkner-Hogg Bartending at Palmer & Co" width="300" />
+            </div> -->
+            <div>
                 <!-- <p class="kicker">About</p>
                 <h1>Building real‑world systems in robotics, photonics & mechatronics.</h1> -->
                 <!-- <p class="lead">I’m a UTS engineering student focused on <strong>LDV‑INS navigation</strong>,
                     <strong>ROS 2 robotics</strong>, and <strong>hands‑on prototyping</strong>. I enjoy turning ideas
                     into robust hardware: fiber‑optic LDVs, Raspberry Pi sensor stacks, and cost‑effective optical
                     heads.</p> -->
-                <p class="lead">I am a passionate young engineer with hands-on experience in mechanical, naval,
-                    and
-                    embedded systems engineering. I excel in problem-solving, adapting to new tasks, and building
-                    strong team relationships, with proven skills in mechanical design, electronics, and process
-                    development across multiple engineering environments. </p>
-                <div class="badge">
-                    <span>Robotics/ROS 2</span>
-                    <span>Optics & LDV</span>
-                    <span>Embedded (SPI/I²C)</span>
-                    <span>Fusion 360</span>
-                    <span>MATLAB • Python • C++</span>
-                </div>
+                <header class="header"> About Me</header>
+                <p class="lead">I didn’t begin my professional journey in engineering, I started behind a bar.
+                    Bartending taught me more than how to mix
+                    a good drink, it gave me my first lessons in communication, teamwork, and relationship building.
+                    When you connect with
+                    the people around you, work becomes more fulfilling, collaboration flows naturally, and challenges
+                    become easier to
+                    overcome.</p>
+                <p class="lead">When I transitioned into engineering, these interpersonal skills became my biggest
+                    advantage. My first large milestone
+                    was at Atlantic & Peninsula, where I worked as a mechanical engineering intern responsible for
+                    maintaining naval ships.
+                    Here I developed time management, stakeholder communication, and a disciplined approach to
+                    mechanical systems. I began
+                    to understand that engineering was not just about solving technical problems, it was also about
+                    managing complexity,
+                    people, and processes in high-stakes environments.</p>
+                <p class="lead">From there, I broadened my experience through multiple internships, from wind tunnel
+                    testing at Windtech to naval
+                    systems at Sofraco, each requiring me to adapt, learn, and grow in different directions. These roles
+                    gave me a strong
+                    foundation in mechanical systems and organisational practices, but my most transformative experience
+                    came at Advanced
+                    Navigation.</p>
+                <p class="lead">At Advanced Navigation, I stepped into a role that blended mechanical, electrical, and
+                    embedded systems engineering. I
+                    designed custom jigs, developed production processes, repaired PCBs, and contributed to new product
+                    introductions. I
+                    found myself not only building hardware but also building processes, from technician training to
+                    production
+                    documentation, ensuring that products could move reliably from concept to manufacture.</p>
+                <p class="lead">What surprised me most was how much self-learning professional engineering demands.
+                    Every project brought something
+                    unfamiliar, new tools, standards, or systems I had to quickly pick up. Over time, I built a mindset
+                    of problem-solving,
+                    adaptability, and continuous learning that now defines how I approach challenges.</p>
+                <p class="lead">Today, I see myself as a dependable and adaptable engineer with hands-on experience
+                    across mechanical, naval, and
+                    embedded systems engineering. I thrive on solving problems, learning new skills, and building strong
+                    relationships with
+                    the people I work with. My passions lie in creating technology that brings together hardware,
+                    electronics, and software
+                    in a way that is collaborative, reliable, and innovative.</p>
+
                 <div class="links">
-                    <a class="btn" data-open-modal="#contact-modal">Get in touch</a>
-                    <a class="btn btn-ghost" href="assets/Liam_Faulkner-Hogg_CV.pdf">Download CV</a>
-                    <a class="btn btn-ghost" href="https://github.com/" target="_blank"
-                        rel="noreferrer noopener">GitHub</a>
-                    <a class="btn btn-ghost" href="https://www.linkedin.com/" target="_blank"
-                        rel="noreferrer noopener">LinkedIn</a>
-                </div>
-            </div>
-            <div class="hero-card">
-                <div class="img-placeholder" role="img" aria-label="Placeholder for headshot">Add a headshot here
-                    (replace with an <img>)</div>
-                <p class="muted" style="margin-top:10px">Tip: keep imagery simple and professional. A lab shot or clean
-                    headshot works well.</p>
-            </div>
-        </section>
-
-
-        <!-- SKILLS with tabbed sub-sections -->
-        <section id="skills">
-            <h2>Skills</h2>
-            <p class="sub">A snapshot of tools and domains I work with.</p>
-            <div class="tabs" role="tablist" aria-label="Skills categories">
-                <button class="tab is-active" role="tab" aria-selected="true" aria-controls="panel-mech"
-                    data-tab-target="#panel-mech">Mechanical / Design</button>
-                <button class="tab" role="tab" aria-selected="false" aria-controls="panel-rob"
-                    data-tab-target="#panel-rob">Robotics / Software</button>
-                <button class="tab" role="tab" aria-selected="false" aria-controls="panel-opt"
-                    data-tab-target="#panel-opt">Optics / Embedded</button>
-            </div>
-            <div id="panel-mech" class="tab-panel" role="tabpanel">
-                <ul class="clean">
-                    <li>Fusion 360 • DFM/DFA • GD&T</li>
-                    <li>Rapid prototyping • 3D printing</li>
-                    <li>Experiment design • Time studies</li>
-                </ul>
-            </div>
-            <div id="panel-rob" class="tab-panel" role="tabpanel" hidden>
-                <ul class="clean">
-                    <li>ROS 2 (Jazzy) • C++ • Python</li>
-                    <li>Sensor fusion • EKF • Nav2</li>
-                    <li>Linux • Git • Data logging</li>
-                </ul>
-            </div>
-            <div id="panel-opt" class="tab-panel" role="tabpanel" hidden>
-                <ul class="clean">
-                    <li>LDV (heterodyne) • Photodetectors</li>
-                    <li>Free‑space & fiber optics</li>
-                    <li>Raspberry Pi • SPI • I²C</li>
-                </ul>
-            </div>
-        </section>
-
-
-        <!-- PROJECTS -->
-        <section id="projects">
-            <h2>Projects</h2>
-            <p class="sub">Selected work with brief context, methods, and impact.</p>
-            <div class="grid">
-                <article class="card">
-                    <h3>Dual‑Wavelength LDV‑INS for GNSS‑Denied Navigation</h3>
-                    <div class="meta">Optics • Embedded • ROS 2</div>
-                    <div class="img-placeholder">Project image / schematic</div>
-                    <p>Built a dual‑wavelength heterodyne LDV integrated with IMU dead‑reckoning to maintain velocity
-                        estimates during GNSS dropouts; explored speckle‑noise reduction and real‑time velocity tracking
-                        on vehicle tests.</p>
-                    <div class="tagrow">
-                        <span class="tag">1550/1556 nm</span>
-                        <span class="tag">WDM/PBC</span>
-                        <span class="tag">Balanced PD</span>
-                        <span class="tag">EKF</span>
-                    </div>
-                    <p><a href="#">Poster/PDF</a> · <a href="#">Repo</a> · <a href="#">Demo clip</a></p>
-                </article>
-                <article class="card">
-                    <h3>ROS 2 IMU Node (ICM‑42688‑P)</h3>
-                    <div class="meta">Embedded • SPI • 200 Hz</div>
-                    <div class="img-placeholder">Screenshot / graph</div>
-                    <p>High‑rate SPI driver & ROS 2 node with timestamping, calibration, and bagging for reliable IMU
-                        pipelines used in sensor fusion testing.</p>
-                    <div class="tagrow">
-                        <span class="tag">Raspberry Pi</span>
-                        <span class="tag">robot_localization</span>
-                        <span class="tag">rosbag2</span>
-                    </div>
-                    <p><a href="#">Repo</a> · <a href="#">Write‑up</a></p>
-                </article>
-                <article class="card">
-                    <h3>Free‑Space Optical Head Prototype</h3>
-                    <div class="meta">Optomechanics • Cost‑down</div>
-                    <div class="img-placeholder">Photo / render</div>
-                    <p>Designed a low‑cost free‑space optical head for LDV experiments (lenses, waveplates, circulator
-                        equivalents) to reduce cost versus fiber‑only builds while maintaining alignment tolerance and
-                        SNR.</p>
-                    <div class="tagrow">
-                        <span class="tag">Optomech</span>
-                        <span class="tag">Thorlabs</span>
-                        <span class="tag">Alignment</span>
-                    </div>
-                    <p><a href="#">Album</a> · <a href="#">BOM</a></p>
-                </article>
-            </div>
-        </section>
-
-
-        <!-- EXPERIENCE -->
-        <section id="experience">
-            <h2>Experience</h2>
-            <div class="grid">
-                <div class="card">
-                    <h3>Undergraduate Researcher — UTS</h3>
-                    <div class="meta">Dates • Sydney</div>
-                    <ul class="clean">
-                        <li>Built and tested LDV‑INS prototype for ground vehicle navigation in GNSS‑denied settings.
-                        </li>
-                        <li>Authored ROS 2 nodes for IMU/LDV integration and data logging; field testing & drift
-                            analysis.</li>
-                        <li>Coordinated equipment access across labs; detailed BOMs & experiment plans.</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h3>Freelance / Personal Engineering Projects</h3>
-                    <div class="meta">Ongoing</div>
-                    <ul class="clean">
-                        <li>Designed electronics & mechanical assemblies; delivered prototypes and documentation.</li>
-                        <li>Managed suppliers, cost tracking, and validation testing.</li>
-                    </ul>
+                    <a class="btn btn-ghost" href="assets/resume.pdf">Resume</a>
+                    <a class="btn btn-ghost" href="https://www.linkedin.com/in/liam-faulknerhogg-b154b6219/"
+                        target="_blank" rel="noreferrer noopener">LinkedIn</a>
                 </div>
             </div>
         </section>
-
-
-        <!-- EDUCATION & ACHIEVEMENTS -->
-        <section id="education">
-            <h2>Education</h2>
-            <div class="card">
-                <div class="row"><strong>BEng (Mechanical & Mechatronics), UTS</strong><span class="muted">Expected
-                        YYYY</span></div>
-                <ul class="clean" style="margin-top:8px">
-                    <li>Coursework: Robotics Studio, Controls, Mechatronics, Applied Mechanics & Design.</li>
-                    <li>Capstone: LDV‑INS for GNSS‑denied navigation.</li>
-                </ul>
-            </div>
-            <h2 style="margin-top:28px">Achievements & Extracurriculars</h2>
-            <div class="card">
-                <ul class="clean">
-                    <li>Hackathons / comps (add details).</li>
-                    <li>Leadership & event organization (sports, travel logistics).</li>
-                    <li>Entrepreneurship: Etsy/Shopify stores; product research & validation.</li>
-                </ul>
-            </div>
-        </section>
-    </main>
-
-
-    <!-- CONTACT MODAL (hidden by default; opened via buttons with data-open-modal) -->
-    <div id="contact-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="contact-title" hidden>
-        <div class="modal-backdrop" data-close-modal></div>
-        <div class="modal-card" role="document">
-            <button class="modal-close" aria-label="Close contact form" data-close-modal>&times;</button>
-            <h2 id="contact-title">Contact Liam</h2>
-            <p class="muted">Send a quick message. All fields are required.</p>
-
-
-            <!-- novalidate: we perform our own validation with JS for custom messages -->
-            <form id="contact-form" novalidate>
-                <label>
-                    Name
-                    <input type="text" name="name" autocomplete="name" required>
-                    <span class="error" aria-live="polite"></span>
-                </label>
-                <label>
-                    Email
-                    <input type="email" name="email" autocomplete="email" required>
-                    <span class="error" aria-live="polite"></span>
-                </label>
-                <label>
-                    Message
-                    <textarea name="message" rows="5" required></textarea>
-                    <span class="error" aria-live="polite"></span>
-                </label>
-                <div class="row">
-                    <button type="submit" class="btn">Send</button>
-                    <button type="button" class="btn btn-ghost" data-close-modal>Cancel</button>
-                </div>
-                <p class="form-result" role="status" aria-live="polite" hidden></p>
-            </form>
-        </div>
-    </div>
-
-
-    <footer>
-        <div class="container">
-            <div class="row">
-                <span>© <span id="y"></span> Liam Faulkner‑Hogg</span>
-                <span class="muted">Built with HTML/CSS/JS • Deployed on GitHub Pages</span>
-            </div>
-        </div>
-    </footer>
-
-
-    <script src="script.js" defer></script>
-</body>
-
-</html>

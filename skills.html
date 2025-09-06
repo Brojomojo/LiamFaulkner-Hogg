@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Liam Faulkner‑Hogg – Mechanical & Mechatronics Engineer</title>
+    <meta name="description"
+        content="Portfolio of Liam Faulkner‑Hogg – Mechanical & Mechatronics Engineer focused on robotics, photonics, and hands‑on prototyping." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header with brand, desktop nav, and a hamburger button for mobile -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="brand">
+                    <div class="avatar" aria-hidden="true">LF</div>
+                    <div>
+                        <strong>Liam Faulkner‑Hogg</strong><br>
+                        <span class="muted">Mechanical & Mechatronics Engineer</span>
+                    </div>
+                </div>
+
+
+                <!-- Hamburger button appears on small screens; toggles the navlinks below -->
+                <button class="hamburger" aria-label="Toggle navigation" aria-controls="primary-nav"
+                    aria-expanded="false">
+                    <span class="hamburger-box" aria-hidden="true">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+
+
+                <!-- Primary navigation; collapsible on mobile -->
+                <div id="primary-nav" class="navlinks" role="navigation" aria-label="Primary">
+                    <a href="./index.html" class="btn btn-ghost">About</a>
+                    <a href="./skills.html" class="btn btn-ghost">Skills</a>
+                    <a href="./projects.html" class="btn btn-ghost">Projects</a>
+                    <!-- <a href="./experience.html" class="btn btn-ghost">Experience</a> -->
+                    <!-- <a href="./education.html" class="btn btn-ghost">Education</a> -->
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- SKILLS with tabbed sub-sections -->
+    <section id="skills" class="skills container">
+        <h2>Skills</h2>
+
+        <!-- Core Engineering Skills -->
+        <h3>Core Engineering</h3>
+        <div class="skills-grid">
+            <span class="badge">Mechanical Design & CAD</span>
+            <span class="badge">Process Development</span>
+            <span class="badge">Prototyping & 3D Printing</span>
+            <span class="badge">Systems Engineering</span>
+            <span class="badge">Testing & Validation</span>
+        </div>
+
+        <!-- Technical Skills -->
+        <h3>Technical</h3>
+        <div class="skills-grid">
+            <span class="badge">Python (AI, Neural Networks)</span>
+            <span class="badge">C++ (ROS 2 Integration)</span>
+            <span class="badge">MATLAB</span>
+            <span class="badge">PCB Diagnostics & Soldering</span>
+            <span class="badge">SPI / I²C Communication</span>
+            <span class="badge">Excel & Data Analysis</span>
+        </div>
+
+        <!-- Professional & Leadership -->
+        <h3>Professional & Leadership</h3>
+        <div class="skills-grid">
+            <span class="badge">Leadership & Team Coordination</span>
+            <span class="badge">Stakeholder Communication</span>
+            <span class="badge">Training & Mentorship</span>
+            <span class="badge">Project Management</span>
+            <span class="badge">Relationship Building</span>
+        </div>
+
+        <!-- Personal Attributes -->
+        <h3>Personal Attributes</h3>
+        <div class="skills-grid">
+            <span class="badge">Problem-Solving</span>
+            <span class="badge">Adaptability</span>
+            <span class="badge">Creativity & Innovation</span>
+            <span class="badge">Dependability</span>
+        </div>
+    </section>
+
+    <style>
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .skills h2 {
+            margin-bottom: 1rem;
+        }
+
+        .skills h3 {
+            margin: 1rem 0 0.5rem;
+        }
+    </style>

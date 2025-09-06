@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Liam Faulkner‑Hogg – Mechanical & Mechatronics Engineer</title>
+    <meta name="description"
+        content="Portfolio of Liam Faulkner‑Hogg – Mechanical & Mechatronics Engineer focused on robotics, photonics, and hands‑on prototyping." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header with brand, desktop nav, and a hamburger button for mobile -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="brand">
+                    <div class="avatar" aria-hidden="true">LF</div>
+                    <div>
+                        <strong>Liam Faulkner‑Hogg</strong><br>
+                        <span class="muted">Mechanical & Mechatronics Engineer</span>
+                    </div>
+                </div>
+
+
+                <!-- Hamburger button appears on small screens; toggles the navlinks below -->
+                <button class="hamburger" aria-label="Toggle navigation" aria-controls="primary-nav"
+                    aria-expanded="false">
+                    <span class="hamburger-box" aria-hidden="true">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+
+
+                <!-- Primary navigation; collapsible on mobile -->
+                <div id="primary-nav" class="navlinks" role="navigation" aria-label="Primary">
+                    <a href="./index.html" class="btn btn-ghost">About</a>
+                    <a href="./skills.html" class="btn btn-ghost">Skills</a>
+                    <a href="./projects.html" class="btn btn-ghost">Projects</a>
+                    <!-- <a href="./experience.html" class="btn btn-ghost">Experience</a> -->
+                    <!-- <a href="./education.html" class="btn btn-ghost">Education</a> -->
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects container">
+        <h2>Projects</h2>
+        <p class="muted">A selection of hands‑on projects spanning robotics, photonics, mechanical design, and web
+            development.</p>
+
+
+        <div class="projects-grid">
+            <!-- Project 1: Dual‑Wavelength LDV Capstone -->
+            <article class="card project" data-modal-target="#modal-capstone">
+                <header>
+                    <img class="thumb" src="assets/dual-LDV.png" alt="Dual‑wavelength LDV diagram thumbnail" />
+                    <h3>Dual‑Wavelength LDV for Dead‑Reckoning (Capstone)</h3>
+                    <p class="muted">Researching speckle‑noise suppression and improved INS drift performance using a
+                        two‑colour LDV and real‑time DR pipeline.</p>
+                </header>
+                <ul class="highlights">
+                    <li>Designed methodology to compare single vs dual‑wavelength LDV velocity inputs in GNSS‑denied
+                        conditions.</li>
+                    <li>Planned vehicle‑mounted experiments; logging velocity channels, IMU, and GNSS ground‑truth for
+                        drift
+                        analysis.</li>
+                    <li>Set up open‑source DR stack with parallel channels and non‑holonomic constraints.</li>
+                </ul>
+                <div class="tags">
+                    <span class="badge">LDV/Optics</span>
+                    <span class="badge">Signal Processing</span>
+                    <span class="badge">INS/Dead‑Reckoning</span>
+                    <span class="badge">Python • MATLAB</span>
+                    <span class="badge">Data Analysis</span>
+                </div>
+                <footer class="links">
+                    <a class="btn btn-ghost" href="assets/Capstone-Proposal.pdf" target="_blank"
+                        rel="noreferrer noopener">Proposal</a>
+                    <!-- <button class="btn btn-ghost open-modal" data-modal="#modal-capstone">Details</button> -->
+                </footer>
+            </article>
+
+
+            <!-- Project 2: Disaster Survivor SPOT Dog (Robotics Studio 1) -->
+            <article class="card project" data-modal-target="#modal-spot">
+                <header>
+                    <img class="thumb" src="assets/robo1.png" alt="SPOT disaster‑response simulation thumbnail" />
+                    <h3>Disaster Survivor SPOT Dog (ROS 2)</h3>
+                    <p class="muted">Search‑and‑rescue pipeline in simulation with SLAM, path planning, perception, and
+                        operator reporting.</p>
+                </header>
+                <ul class="highlights">
+                    <li>Configured ROS 2 environments (Gazebo/RViz) and launched SLAM (Cartographer/SLAM Toolbox) with
+                        LiDAR
+                        & IMU.</li>
+                    <li>Implemented topic I/O: LaserScan filtering and camera pipelines; prototyped object‑detection +
+                        path
+                        replanning.</li>
+                    <li>Produced sprint docs, risk registers, and stakeholder engagement; packaged code with
+                        launch/config
+                        files.</li>
+                </ul>
+                <div class="tags">
+                    <span class="badge">ROS 2</span>
+                    <span class="badge">SLAM</span>
+                    <span class="badge">Path Planning</span>
+                    <span class="badge">C++ • Python</span>
+                    <span class="badge">Gazebo/RViz</span>
+                </div>
+                <footer class="links">
+                    <a class="btn btn-ghost" href="assets/Spot-Rescue.pdf" target="_blank"
+                        rel="noreferrer noopener">Report</a>
+                    <!-- <button class="btn btn-ghost open-modal" data-modal="#modal-spot">Details</button> -->
+                </footer>
+            </article>
+
+
+            <!-- Project 3: Tetris AI -->
+            <article class="card project" data-modal-target="#modal-tetris">
+                <header>
+                    <img class="thumb" src="assets/tetrisAI.jpg" alt="Tetris AI gameplay thumbnail" />
+                    <h3>Tetris AI (Python)</h3>
+                    <p class="muted">A reinforcement‑learning agent that outperforms human play; showcased at UTS Tech
+                        Fest
+                        2024.</p>
+                </header>
+                <ul class="highlights">
+                    <li>Implemented state evaluation, reward shaping, and training loop for robust play.</li>
+                    <li>Profiling & refactoring for real‑time inference; CLI visualizer and replay logs.</li>
+                    <li>Documented experiments and hyper‑parameters for reproducibility.</li>
+                </ul>
+                <div class="tags">
+                    <span class="badge">Python</span>
+                    <span class="badge">Reinforcement Learning</span>
+                    <span class="badge">Neural Networks</span>
+                    <span class="badge">Data Viz</span>
+                </div>
+                <footer class="links">
+                    <a class="btn btn-ghost" href=https://github.com/Topey2X/TetrisAI>Repo</a>
+                    <!-- <button class="btn btn-ghost open-modal" data-modal="#modal-tetris">Details</button> -->
+                </footer>
+            </article>
+            </script>
+
+
+            <!-- Project 4: Warman Challenge Robot (Mechanical Design) -->
+            <article class="card project" data-modal-target="#modal-warman">
+                <header>
+                    <img class="thumb" src="assets/warman.png" alt="Warman challenge robot thumbnail" />
+                    <h3>Warman Challenge Robot</h3>
+                    <p class="muted">Multi‑subsystem robot with Mecanum drive, angled scissor‑arm elevator, and
+                        trap‑door depositor.
+                    </p>
+                </header>
+                <ul class="highlights">
+                    <li>CAD + fabrication of double scissor‑arm; torque & reach calculations; worm‑gear drive selection.
+                    </li>
+                    <li>Laser‑cut acrylic links; aluminium pins/rails; Arduino‑based control & wiring.</li>
+                    <li>Iterated chassis in plywood; weight, manufacturability, and stability trade‑offs.</li>
+                </ul>
+                <div class="tags">
+                    <span class="badge">SolidWorks/Fusion 360</span>
+                    <span class="badge">Mechanisms</span>
+                    <span class="badge">Prototyping</span>
+                    <span class="badge">Arduino</span>
+                    <span class="badge">Manufacturing</span>
+                </div>
+                <footer class="links">
+                    <a class="btn btn-ghost" href="assets/Warman-Challenge.pdf" target="_blank"
+                        rel="noreferrer noopener">Portfolio</a>
+                    <!-- <button class="btn btn-ghost open-modal" data-modal="#modal-warman">Details</button> -->
+                </footer>
+            </article>
+
+
+            <!-- Project 5: This E‑Portfolio Website -->
+            <article class="card project" data-modal-target="#modal-portfolio">
+                <header>
+                    <img class="thumb" src="assets/website.png" alt="E‑portfolio website thumbnail" />
+                    <h3>E‑Portfolio Website</h3>
+                    <p class="muted">A lightweight, responsive site built with semantic HTML/CSS/JS, accessible
+                        components, and
+                        clean navigation.</p>
+                </header>
+                <ul class="highlights">
+                    <li>Custom layout with hero/about, skills grid, projects gallery, and experience/education pages.
+                    </li>
+                    <li>Mobile‑first styles, keyboard‑friendly nav, and descriptive alt/ARIA for accessibility.</li>
+                    <li>Deployed via Git/GitHub; iterative content & UI improvements.</li>
+                </ul>
+                <div class="tags">
+                    <span class="badge">HTML/CSS/JS</span>
+                    <span class="badge">Responsive Design</span>
+                    <span class="badge">Accessibility</span>
+                    <span class="badge">Git/GitHub</span>
+                </div>
+                <footer class="links">
+                    <a class="btn btn-ghost" href="./index.html">Live</a>
+                    <a class="btn btn-ghost" href=https://github.com/Brojomojo/LiamFaulkner-Hogg>Repo</a>
+                    <!-- <button class="btn btn-ghost open-modal" data-modal="#modal-portfolio">Details</button> -->
+                </footer>
+            </article>
+        </div>
+    </section>
+
+
+    <!-- Modals -->
+    <div id="modal-capstone" class="modal" aria-hidden="true" role="dialog" aria-label="Capstone details">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close">×</button>
+            <h3>Capstone – Dual‑Wavelength LDV</h3>
+            <p>Deeper dive: architecture diagrams, planned experiments, dataset schema, and integration notes (LDV ↔ IMU
+                ↔
+                DR). Add images and figures here.</p>
+            <a class="btn" href="assets/capstone_proposal.pdf" target="_blank" rel="noreferrer noopener">Read the
+                Proposal</a>
+        </div>
+    </div>
+
+
+    <div id="modal-spot" class="modal" aria-hidden="true" role="dialog" aria-label="SPOT Dog details">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close">×</button>
+            <h3>Disaster Survivor SPOT Dog (ROS 2)</h3>
+            <p>Deeper dive: launch tree, node graph, SLAM config, and perception pipeline notes. Add screenshots from
+                RViz/Gazebo.</p>
+            <a class="btn" href="assets/spot_disaster_report.pdf" target="_blank" rel="noreferrer noopener">Read the
+                Report</a>
+        </div>
+    </div>
+
+
+    <div id="modal-tetris" class="modal" aria-hidden="true" role="dialog" aria-label="Tetris AI details">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close">×</button>
+            <h3>Tetris AI (Python)</h3>
+            <p>Deeper dive: training curves, reward function, and gameplay GIFs. Add links to code and demos.</p>
+        </div>
+    </div>
+
+
+    <div id="modal-warman" class="modal" aria-hidden="true" role="dialog" aria-label="Warman details">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close">×</button>
+            <h3>Warman Challenge Robot</h3>
+            <p>Deeper dive: mechanism sketches, torque calcs, BOM, and fabrication photos.</p>
+            <a class="btn" href="assets/warman_portfolio.pdf" target="_blank" rel="noreferrer noopener">Open
+                Portfolio</a>
+        </div>
+    </div>
+
+
+    <div id="modal-portfolio" class="modal" aria-hidden="true" role="dialog" aria-label="E‑portfolio details">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close">×</button>
+            <h3>E‑Portfolio Website</h3>
+            <p>Deeper dive: site structure, accessibility checklist, and deployment workflow.</p>
+        </div>
+    </div>
+
+
+    <script>
+        // Simple, accessible modal handler
+        document.addEventListener('click', function (e) {
+            const btn = e.target.closest('.open-modal');
+            if (btn) {
+                const sel = btn.getAttribute('data-modal');
+                const modal = document.querySelector(sel);
+                if (modal) {
+                    modal.setAttribute('aria-hidden', 'false');
+                    modal.querySelector('.modal-close')?.focus();
+                }
+            }
+            if (e.target.classList.contains('modal') || e.target.classList.contains('modal-close')) {
+                const modal = e.target.classList.contains('modal') ? e.target : e.target.closest('.modal');
+                modal?.setAttribute('aria-hidden', 'true');
+            }
+        });
+
+
+        // Close on Escape
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                document.querySelectorAll('.modal[aria-hidden="false"]').forEach(m => m.setAttribute('aria-hidden', 'true'));
+            }
+        });
+    </script>
